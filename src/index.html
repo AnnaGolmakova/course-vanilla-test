@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>Our online courses</title>
+    </head>
+    <body>
+        <header class="header">
+            <p class="header__subtitle">Enjoy your studying!</p>
+            <h1 class="header__title">Our online courses</h1>
+        </header>
+        <div class="filters">
+            <ul class="filters__list">
+                <li class="filters__item">
+                    <button class="filter-button"></button>
+                </li>
+            </ul>
+            <div class="search">
+                <input
+                    type="text"
+                    class="search__input"
+                    placeholder="Search course..."
+                />
+                <span class="search__icon">🔍</span>
+            </div>
+        </div>
+        <main class="courses"></main>
+        <div class="load-more">
+            <button class="load-more__button">
+                <svg
+                    class="load-more__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <path
+                        d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13"
+                    />
+                </svg>
+                Load more
+            </button>
+        </div>
+    </body>
+</html>
