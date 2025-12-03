@@ -13,6 +13,7 @@ export const coursesData = [
     title: "The Ultimate Google Ads Training Course",
     price: "$100",
     author: "Jerome Bell",
+    imageUrl: "./images/people/image-01.webp",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const coursesData = [
     title: "Product Management Fundamentals",
     price: "$480",
     author: "Marvin McKinney",
+    imageUrl: "./images/people/image-02.webp",
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ export const coursesData = [
     title: "HR Management and Analytics",
     price: "$200",
     author: "Leslie Alexander Li",
+    imageUrl: "./images/people/image-03.webp",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const coursesData = [
     title: "Brand Management & PR Communications",
     price: "$530",
     author: "Kristin Watson",
+    imageUrl: "./images/people/image-04.webp",
   },
   {
     id: 5,
@@ -41,6 +45,7 @@ export const coursesData = [
     title: "Graphic Design Basic",
     price: "$500",
     author: "Guy Hawkins",
+    imageUrl: "./images/people/image-05.webp",
   },
   {
     id: 6,
@@ -48,6 +53,7 @@ export const coursesData = [
     title: "Business Development Management",
     price: "$400",
     author: "Dianne Russell",
+    imageUrl: "./images/people/image-06.webp",
   },
   {
     id: 7,
@@ -55,6 +61,7 @@ export const coursesData = [
     title: "Highload Software Architecture",
     price: "$600",
     author: "Brooklyn Simmons",
+    imageUrl: "./images/people/image-07.webp",
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const coursesData = [
     title: "Human Resources – Selection and Recruitment",
     price: "$150",
     author: "Kathryn Murphy",
+    imageUrl: "./images/people/image-08.webp",
   },
   {
     id: 9,
@@ -69,5 +77,6 @@ export const coursesData = [
     title: "User Experience. Human-centered Design",
     price: "$240",
     author: "Cody Fisher",
+    imageUrl: "./images/people/image-09.webp",
   },
 ];

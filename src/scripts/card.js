@@ -51,6 +51,7 @@ class Card {
 
     this._cardImage = this._card.querySelector(".card__image");
     this._cardImage.src = this._imageUrl;
+    this._cardImage.srcset = `${this._imageUrl}, ${this._imageUrl.replace(/(\.\w+)$/, "@2x$1")} 2x`;
     this._cardImage.alt = this._title;
 
     this._card.querySelector(".card__category").textContent =
