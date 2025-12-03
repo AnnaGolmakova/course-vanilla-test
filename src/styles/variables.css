@@ -1,3 +1,9 @@
 :root {
-  --text-primary: #1e212c;
+  --text-primary: rgba(30, 33, 44, 1);
+  --text-secondary: rgba(120, 122, 128, 1);
+  --danger: rgba(255, 66, 66, 1);
+  --page: rgba(255, 255, 255, 1);
+  --card: rgba(255, 255, 255, 1);
+  --card-border: rgba(229, 232, 237, 1);
+  --load-color: rgba(66, 69, 81, 1);
 }

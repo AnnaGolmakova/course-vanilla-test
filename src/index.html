@@ -10,37 +10,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/index.css" />
+    <script type="module" src="./scripts/index.js"></script>
     <title>Our online courses</title>
   </head>
-  <body>
-    <header class="header">
-      <p class="header__subtitle">Enjoy your studying!</p>
-      <h1 class="header__title">Our online courses</h1>
-    </header>
-    <div class="filters">
-      <ul class="filters__list">
-        <li class="filters__item">
-          <button class="filter-button filter-button_active">All</button>
-        </li>
-        <li class="filters__item">
-          <button class="filter-button">Marketing</button>
-        </li>
-        <li class="filters__item">
-          <button class="filter-button">Management</button>
-        </li>
-      </ul>
-      <div class="search">
-        <input
-          type="text"
-          class="search__input"
-          placeholder="Search course..."
-        />
-        <span class="search__icon"></span>
+
+  <body class="body">
+    <div class="page">
+      <header class="header">
+        <p class="header__subtitle">Enjoy your studying!</p>
+        <h1 class="header__title">Our online courses</h1>
+      </header>
+
+      <div class="filters">
+        <ul class="filters__list">
+          <li class="filters__item">
+            <button class="filter-button filter-button_active">All</button>
+          </li>
+          <li class="filters__item">
+            <button class="filter-button">Marketing</button>
+          </li>
+          <li class="filters__item">
+            <button class="filter-button">Management</button>
+          </li>
+        </ul>
+        <div class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search course..."
+          />
+          <span class="search__icon"></span>
+        </div>
       </div>
-    </div>
-    <main class="courses"></main>
-    <div class="load-more">
-      <button class="load-more__button">Load more</button>
+
+      <main class="courses"></main>
+
+      <template id="card-template">
+        <div class="card">
+          <img class="card__image" />
+          <div class="card__description">
+            <div class="card__category"></div>
+            <h2 class="card__title"></h2>
+            <div class="card__meta">
+              <div class="card__meta-price"></div>
+              <div class="card__meta-author"></div>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <button class="load-more">Load more</button>
     </div>
   </body>
 </html>
