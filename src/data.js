@@ -1,3 +1,11 @@
+export const coursesCategories = new Map([
+  ["marketing", { label: "Marketing", color: "rgba(3, 206, 164, 1)" }],
+  ["management", { label: "Management", color: "rgba(90, 135, 252, 1)" }],
+  ["hr", { label: "HR & Recruting", color: "rgba(248, 152, 40, 1)" }],
+  ["design", { label: "Design", color: "rgba(245, 47, 110, 1)" }],
+  ["development", { label: "Development", color: "rgba(119, 114, 241, 1)" }],
+]);
+
 export const coursesData = [
   {
     id: 1,
