@@ -13,10 +13,20 @@ class CardsList {
     this._container = document.querySelector(selector);
   }
 
-  renderItems() {
-    this._initialArray.forEach((item) => {
+  renderItems(items) {
+    const list = items ?? this._initialArray;
+    this._container.innerHTML = "";
+    list.forEach((item) => {
       this.addItem(this._renderer(item));
     });
+  }
+
+  filterItems(filterCallback) {
+    this.renderItems(this._initialArray.filter(filterCallback));
+  }
+
+  resetFilter() {
+    this.renderItems();
   }
 
   setItem(item, prepend = false) {
