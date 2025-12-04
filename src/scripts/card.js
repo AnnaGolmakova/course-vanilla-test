@@ -2,7 +2,7 @@ import { coursesCategories } from "../data.js";
 
 /**
  * Card for some course.
- * @typedef Course
+ * @typedef  {Object} Course
  * @property {string | number} id - Course id
  * @property {string} title - Name of the place on card.
  * @property {Category} category - Name of the place on card.
@@ -14,7 +14,7 @@ import { coursesCategories } from "../data.js";
 
 /**
  * Course category props
- * @typedef Category
+ * @typedef  {Object} Category
  * @property {string} label - Category title
  * @property {string} color - Background color for badge
  */

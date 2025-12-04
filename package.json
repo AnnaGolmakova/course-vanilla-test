@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "vite serve src",
-    "deploy": "gh-pages -d src"
+    "build": "vite build src --outDir ../dist --base=./",
+    "deploy": "gh-pages -d dist"
   },
   "main": "./src/index.html",
   "dependencies": {},
