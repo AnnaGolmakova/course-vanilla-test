@@ -15,10 +15,15 @@ class CardsList {
 
   renderItems(items) {
     const list = items ?? this._initialArray;
-    this._container.innerHTML = "";
-    list.forEach((item) => {
-      this.addItem(this._renderer(item));
-    });
+
+    if (list.length > 0) {
+      this._container.innerHTML = "";
+      list.forEach((item) => {
+        this.addItem(this._renderer(item));
+      });
+    } else {
+      this._container.innerHTML = "<p>No cources found</p>";
+    }
   }
 
   filterItems(filterCallback) {

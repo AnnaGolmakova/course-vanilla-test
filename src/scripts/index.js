@@ -3,6 +3,7 @@ import CardsList from "./cardsList.js";
 import Filter from "./filters.js";
 
 import { coursesData, coursesCategories } from "../data.js";
+import { debounce } from "./debounce.js";
 
 const courseGroups = Object.groupBy(coursesData, ({ category }) => category);
 const courseCounts = Object.entries(courseGroups).map(([key, array]) => ({
@@ -25,6 +26,19 @@ function applyFilter(type) {
   }
 }
 
+function search(event) {
+  const query = event.target.value;
+  if (query === "") {
+    cardsList.resetFilter();
+  } else {
+    cardsList.filterItems(
+      (item) => item.title.includes(query) || item.author.includes(query),
+    );
+  }
+}
+
+const debouncedSearch = debounce(search, 400);
+
 const cardsList = new CardsList(
   {
     items: coursesData,
@@ -41,6 +55,10 @@ const filter = new Filter(
 );
 
 window.addEventListener("load", (event) => {
+  document
+    .querySelector(".search__input")
+    .addEventListener("input", debouncedSearch);
+
   cardsList.renderItems();
   filter.renderItems();
 });
