@@ -2,7 +2,7 @@
 
 A responsive web application for browsing and filtering online courses. Built with vanilla JavaScript, CSS, and HTML5.
 
-![Screenshot](./docs/screenshot1.png)
+![Screenshot](./docs/Screenshot1.png)
 
 ## 🎯 Overview
 
@@ -13,13 +13,13 @@ This project displays a catalog of online courses with filtering and search capa
 - **Course Catalog**: Display cards with course information (title, category, price, and author)
 - **Category Filtering**: Filter courses by category using radio buttons
 
-![Screenshot](./docs/screenshot2.png)
+![Screenshot](/docs/Screenshot2.png)
 
 - **Search Functionality**: Search courses by title in real-time (for later implementation)
 - **Load More**: Pagination to load additional courses (for later implementation)
 - **Responsive Design**: Mobile-friendly layout
 
-![Screenshot](./docs/screenshot3.png)
+![Screenshot](/docs/Screenshot3.png)
 
 - **Category Counters**: Show the number of courses in each category
 
