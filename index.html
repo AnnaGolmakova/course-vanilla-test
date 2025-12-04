@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Our online courses</title>
+    <script type="module" crossorigin src="./assets/index-rodnyi6u.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-j3Rfot0R.css">
+  </head>
+
+  <body class="body">
+    <div class="page">
+      <header class="header">
+        <p class="header__subtitle">Enjoy your studying!</p>
+        <h1 class="header__title">Our online courses</h1>
+      </header>
+
+      <div class="filters">
+        <fieldset class="filters__list">
+          <label class="filter-button">
+            <input
+              type="radio"
+              class="filter-button__input"
+              name="category"
+              value="all"
+              checked
+            />
+            <span class="filter-button__label">All</span>
+            <span class="filter-button__counter"></span>
+          </label>
+          <template id="filter-template">
+            <label class="filter-button">
+              <input
+                type="radio"
+                class="filter-button__input"
+                name="category"
+              />
+              <span class="filter-button__label"></span>
+              <span class="filter-button__counter"></span>
+            </label>
+          </template>
+        </fieldset>
+        <div class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search course..."
+          />
+          <span class="search__icon"></span>
+        </div>
+      </div>
+
+      <main class="courses"></main>
+
+      <template id="card-template">
+        <div class="card">
+          <img class="card__image" />
+          <div class="card__description">
+            <div class="card__category"></div>
+            <h2 class="card__title"></h2>
+            <div class="card__meta">
+              <div class="card__meta-price"></div>
+              <div class="card__meta-author"></div>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <button class="load-more">Load more</button>
+    </div>
+  </body>
+</html>
