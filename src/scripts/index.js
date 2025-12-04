@@ -27,12 +27,14 @@ function applyFilter(type) {
 }
 
 function search(event) {
-  const query = event.target.value;
+  const query = event.target.value.toLowerCase();
   if (query === "") {
     cardsList.resetFilter();
   } else {
     cardsList.filterItems(
-      (item) => item.title.includes(query) || item.author.includes(query),
+      (item) =>
+        item.title.toLowerCase().includes(query) ||
+        item.author.toLowerCase().includes(query),
     );
   }
 }
