@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "vite serve src",
-    "build": "vite build src --outDir ../dist --base=./",
+    "build": "vite build src --outDir ../dist --base=https://annagolmakova.github.io/course-vanilla-test/",
     "deploy": "gh-pages -d dist"
   },
   "main": "./src/index.html",
